@@ -84,75 +84,8 @@
 	<!-- Form Section -->
 	<section class="sample-text-area">
 		<div class="container box_1170">
-			<form name="submit-to-google-sheet">
-				<h3 class="mb-30">Application</h3>
-					<div class="mt-10">
-						<input type="text" name="Name" placeholder="Name" required class="single-input">
-					</div>
-					<div class="mt-10">
-						<input type="text" name="Parent's Name" placeholder="Parent's Name" required class="single-input">
-					</div>
-					<div class="mt-10">
-						<input type="text" name="Parent's Contact" placeholder="Parent's Contact" required class="single-input">
-					</div>
-					<div class="mt-10">
-						<input type="text" name="What school do you attend?" placeholder="What school do you attend?" required class="single-input">
-					</div>
-					<div class="mt-10">
-						<input type="text" name="What city are we in?" placeholder="What city are we in?" required class="single-input">
-					</div>
-					<br>
-					<h3 class="mb-30">Survey</h3>
-					<div class="mt-10">
-						<input type="text" name="Did you have breakfast?" placeholder="Did you have breakfast?" required class="single-input">
-					</div>
-					<div class="mt-10">
-						<input type="text" name="Will you apply what you learned from the lecture?" placeholder="Will you apply what you learned from the lecture?" required class="single-input">
-					</div>
-					<div class="mt-10">
-						<input type="text" name="Did Chris Nolan motivate you to succeed?" placeholder="Did Chris Nolan motivate you to succeed?" required class="single-input">
-					</div>
-					<div class="mt-10">
-						<input type="text" name="Is Chris Nolan Knowledgeable?" placeholder="Is Chris Nolan Knowledgeable?" required class="single-input">
-					</div>
-					<div class="mt-10">
-						<input type="text" name="Can you relate to Chris Nolan?" placeholder="Can you relate to Chris Nolan?" required class="single-input">
-					</div>
-					<div class="mt-10">
-						<input type="text" name="Did Chris Nolan have a willingness to help?" placeholder="Did Chris Nolan have a willingness to help?" required class="single-input">
-					</div>
-					<div class="mt-10">
-						<input type="text" name="Did Chris Nolan make you aware of the problem?" placeholder="Did Chris Nolan make you aware of the problem?" required class="single-input">
-					</div>
-					<div class="mt-10">
-						<input type="text" name="Did Chris Nolan challenge you to pick a career goal or ask you what you would like to become?" placeholder="Did Chris Nolan challenge you to pick a career goal or ask you what you would like to become?" required class="single-input">
-					</div>
-					<div class="mt-10">
-						<input type="text" name="Did Chris Nolan motivate you to think/build a fool proof life plan?" placeholder="Did Chris Nolan motivate you to think/build a fool proof life plan?" required class="single-input">
-					</div>
-					<div class="mt-10">
-						<input type="text" name="Does Chris Nolan seem healthy?" placeholder="Does Chris Nolan seem healthy?" required class="single-input">
-					</div>
-					<div class="mt-10">
-						<input type="text" name="Did Chris Nolan teach/expose you to healthy lifestyle choices?" placeholder="Did Chris Nolan teach/expose you to healthy lifestyle choices?" required class="single-input">
-					</div>
-					<br>
-					<div class="button-group-area mt-40">
-						<input type="submit" class="genric-btn primary e-large"></a>
-					</div>
-					<br>
-			</form>
-			<script>
- 	 			const scriptURL = 'https://script.google.com/macros/s/AKfycbzJDNvQodXQIo1ngvFjndmmCWMDDht6xPGdX96L1EhJ5XvcxOg/exec'
-  				const form = document.forms['submit-to-google-sheet']
-				
-  				form.addEventListener('submit', e => {
-    				e.preventDefault()
-    				fetch(scriptURL, { method: 'POST', body: new FormData(form)})
-      				.then(response => console.log('Success!', response))
-      				.catch(error => console.error('Error!', error.message))
-  				})
-			</script>
+			<h3 class="mb-30">Application</h3>
+				<iframe src="https://docs.google.com/forms/d/e/1FAIpQLSfDfawjNCnIX7IrHCkbbo2nSBynX72B_szdUtZge5zu76JNGg/viewform?embedded=true" width="100%" height="2725" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
 		</div>
 	</section>
 	<!-- Form Part End -->
