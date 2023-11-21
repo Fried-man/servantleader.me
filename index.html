@@ -51,30 +51,19 @@ body {
   </div>
  </div>
 
-<script type="text/javascript">
-
-(function(){
- 
- var preload = document.getElementById("preload");
- var loading = 0;
- var id = setInterval(frame, 64);
-
- function frame(){
-  if(loading == 100) {
-   clearInterval(id);
-   window.open("https://servantleader.me/application.html", "_self");
-  }
-  else {
-   loading = loading + 1;
-   
-  }
- }
-
-
-})();
-
-
-    </script>
+ <script type="text/javascript">
+  (function(){
+      var preload = document.getElementById("preload");
+      
+      // Set a timeout for 3 seconds (3000 milliseconds)
+      setTimeout(function() {
+          // Redirect to the application page
+          window.location.href = "/application.html";
+      }, 3000); // Adjust the time as needed
+  
+  })();
+  </script>
+  
  </body>
 
 
